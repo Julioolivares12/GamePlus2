@@ -21,11 +21,11 @@
             android:icon="@drawable/start"
             android:title="@string/favoritos" />
         <item
-            android:id="@+id/ventas"
+            android:id="@+id/nav_ventas"
             android:icon="@drawable/venta"
             android:title="@string/ventas" />
         <item
-            android:id="@+id/peores"
+            android:id="@+id/nav_peores"
             android:icon="@drawable/dislike"
             android:title="@string/peores" />
     </group>
