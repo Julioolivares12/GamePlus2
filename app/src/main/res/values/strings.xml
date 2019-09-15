@@ -36,5 +36,18 @@
     <string name="video_juegos">Video Juegos</string>
     <string name="todo">TODO</string>
 
+    <string-array name="telefonos">
+        <item>+503 2225-6934</item>
+        <item>+503 2225-6935</item>
+        <item>+503 2225-6936</item>
+        <item>+503 2225-6937</item>
+        <item>+503 2225-6938</item>
+        <item>+503 2225-6939</item>
+        <item>+503 2225-6930</item>
+        <item>+503 2225-6932</item>
+    </string-array>
+
+
+
 
 </resources>
