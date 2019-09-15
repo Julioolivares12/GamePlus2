@@ -30,5 +30,31 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="imagen_mas_esperados">imagen mas esperados</string>
 
+    <string name="alumnos_gh">Alumnos:</string>
+    <string name="tecnicas_de_calidad_de_software">Tecnicas de calidad de software</string>
+    <string name="julio_roberto_olivares_perez_25_2088_2015">Julio Roberto Olivares Perez 25-2088-2015</string>
+    <string name="marvin_josue_cortez_rodas_25_2049_2015">Marvin Josue Cortez Rodas 25-2049-2015</string>
+    <string name="video_juegos">Video Juegos</string>
+    <string name="todo">TODO</string>
 
+    <string-array name="telefonos">
+        <item>+503 2225-6934</item>
+        <item>+503 2225-6935</item>
+        <item>+503 2225-6936</item>
+        <item>+503 2225-6937</item>
+        <item>+503 2225-6938</item>
+        <item>+503 2225-6939</item>
+        <item>+503 2225-6930</item>
+        <item>+503 2225-6932</item>
+    </string-array>
+    <string-array name="sucursales">
+        <item>Metro Centro</item>
+        <item>Multiplaza</item>
+        <item>San Miguel</item>
+        <item>Metro Sur</item>
+        <item>La Gran Via</item>
+        <item>Mall</item>
+        <item>Las Cascadas</item>
+        <item>Otros</item>
+    </string-array>
 </resources>
