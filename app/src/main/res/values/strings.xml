@@ -58,4 +58,10 @@
         <item>Las Cascadas</item>
         <item>Otros</item>
     </string-array>
+    <string-array name="titulos">
+        <item>Mision Imposible</item>
+        <item>Robocot 3</item>
+        <item>Treasures mdee</item>
+
+    </string-array>
 </resources>
