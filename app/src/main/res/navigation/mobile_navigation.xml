@@ -13,32 +13,32 @@
     <fragment
         android:id="@+id/nav_categoria"
         android:name="com.julio.gameplus2.ui.categoria.CategoriaFragment"
-        android:label="fragment_categoria"
+        android:label="categoria"
         tools:layout="@layout/fragment_categoria" />
     <fragment
         android:id="@+id/nav_favoritos"
         android:name="com.julio.gameplus2.ui.favoritos.FavoritosFragment"
-        android:label="fragment_favoritos"
+        android:label="favoritos"
         tools:layout="@layout/fragment_favoritos" />
     <fragment
         android:id="@+id/nav_masEsperados"
         android:name="com.julio.gameplus2.ui.masEsperados.MasEsperadosFragment"
-        android:label="fragment_mas_esperados"
+        android:label="mas esperados"
         tools:layout="@layout/fragment_mas_esperados" />
     <fragment
         android:id="@+id/nav_peores"
         android:name="com.julio.gameplus2.ui.peores.PeoresFragment"
-        android:label="fragment_peores"
+        android:label="peores videojuegos"
         tools:layout="@layout/fragment_peores" />
     <fragment
         android:id="@+id/nav_videojuegos"
         android:name="com.julio.gameplus2.ui.videojuegos.VideojuegosFragment"
-        android:label="fragment_videojuegos"
+        android:label="videojuegos"
         tools:layout="@layout/fragment_videojuegos" />
     <fragment
         android:id="@+id/nav_contacto"
         android:name="com.julio.gameplus2.ui.contacto.ContactoFragment"
-        android:label="fragment_contacto"
+        android:label="contacto"
         tools:layout="@layout/fragment_contacto" />
 
 
