@@ -28,6 +28,8 @@ public class ContactoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_contacto, container, false);
+        sucursal = getResources().getStringArray(R.array.sucursales);
+        telefono = getResources().getStringArray(R.array.telefonos);
 
         // Inflate the layout for this fragment
         return view;
