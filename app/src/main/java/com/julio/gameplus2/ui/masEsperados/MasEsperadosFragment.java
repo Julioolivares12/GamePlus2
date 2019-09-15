@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 
 import com.julio.gameplus2.R;
 import com.julio.gameplus2.adapters.MasEsperadosAdapter;
+import com.julio.gameplus2.arreglos.Arreglos;
 import com.julio.gameplus2.listeners.OnItemClickListener;
 import com.julio.gameplus2.modelos.VideoJuego;
 
@@ -36,6 +37,7 @@ public class MasEsperadosFragment extends Fragment {
         RecyclerView recyclerView = view.findViewById(R.id.rb_masEsperados);
         setUpRecyclerView(recyclerView);
 
+        masEsperados = Arreglos.masEsperados;
         return view;
     }
 
@@ -47,6 +49,5 @@ public class MasEsperadosFragment extends Fragment {
             }
         }));
     }
-
 
 }
