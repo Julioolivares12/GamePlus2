@@ -6,6 +6,10 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="alumnos">Alumnos - carnet</string>
+    <string name="alumno1">Marvin Cortez 2520492015</string>
+    <string name="alumno2">Julio Olivares 2520882015 </string>
+
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
