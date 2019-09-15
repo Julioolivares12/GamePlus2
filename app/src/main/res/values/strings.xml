@@ -11,11 +11,20 @@
     <string name="alumno2">Julio Olivares 2520882015 </string>
 
 
-    <string name="menu_home">Home</string>
+    <string name="menu_home">Inicio</string>
+    <string name="categorias">Categorias</string>
+    <string name="videojuegos">Video Juegos</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="ventas">Mas Esperados</string>
+    <string name="peores">Los Peores</string>
+    <string name="contacto">Contactanos</string>
+
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
     <string name="Datos_Personales">Datos_Personales</string>
+
+
 </resources>
