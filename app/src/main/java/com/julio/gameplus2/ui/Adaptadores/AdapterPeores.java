@@ -12,23 +12,20 @@ import com.julio.gameplus2.R;
 
 public class AdapterPeores extends BaseAdapter {
     private Context contexto;
-    private String []telefonos;
-    private String []sucursales;
-    private int imagen;
-    TextView telefono;
-    TextView sucursal;
+    private String []titulos;
+    private int[] imagenes;
+    TextView titulo;
     ImageView imagen2;
 
-    public AdapterPeores(Context contexto, String[]telefonos, String []sucursales , int imagen) {
+    public AdapterPeores(Context contexto, String[]titulos,int [] imagen) {
        this.contexto = contexto;
-       this.telefonos = telefonos;
-       this.sucursales = sucursales;
-       this.imagen = imagen;
+       this.titulos = titulos;
+       this.imagenes = imagen;
     }
 
     @Override
     public int getCount() {
-        return telefonos.length;
+        return titulos.length;
     }
     @Override
     public Object getItem(int arg0){
@@ -44,17 +41,15 @@ public class AdapterPeores extends BaseAdapter {
         if(arg1==null){
             LayoutInflater inflar = (LayoutInflater)contexto.getSystemService(contexto.LAYOUT_INFLATER_SERVICE);
             item = new View(contexto);
-            item = inflar.inflate(R.layout.itemtelefono, null);
+            item = inflar.inflate(R.layout.item_los_peores, null);
 
         }else{
             item= (View)arg1;
         }
-        telefono=(TextView)item.findViewById(R.id.tvTelefono);
-        sucursal=(TextView)item.findViewById(R.id.tvSucursal);
-        imagen2 = (ImageView)item.findViewById(R.id.imgLocal);
-        telefono.setText(telefonos[posicion]);
-        sucursal.setText(sucursales[posicion]);
-        imagen2.setImageResource(imagen);
+        titulo=(TextView)item.findViewById(R.id.tvPeor);
+        imagen2 = (ImageView)item.findViewById(R.id.imgPeor);
+        titulo.setText(titulos[posicion]);
+        imagen2.setImageResource(imagenes[posicion]);
         return item;
     }
 
