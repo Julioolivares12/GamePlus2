@@ -30,7 +30,7 @@
             android:title="@string/peores" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Contactos">
         <menu>
             <item
                 android:id="@+id/nav_share"
