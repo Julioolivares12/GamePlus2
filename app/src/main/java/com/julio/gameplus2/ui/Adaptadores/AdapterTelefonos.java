@@ -22,6 +22,7 @@ public class AdapterTelefonos extends BaseAdapter {
     public AdapterTelefonos(Context contexto, String[]telefonos,String []sucursales ,int imagen) {
        this.contexto = contexto;
        this.telefonos = telefonos;
+       this.sucursales = sucursales;
        this.imagen = imagen;
     }
 
