@@ -34,10 +34,11 @@ public class MasEsperadosFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_mas_esperados, container, false);
+        masEsperados = Arreglos.masEsperados;
         RecyclerView recyclerView = view.findViewById(R.id.rb_masEsperados);
         setUpRecyclerView(recyclerView);
 
-        masEsperados = Arreglos.masEsperados;
+
         return view;
     }
 

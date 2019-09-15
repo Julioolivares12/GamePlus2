@@ -13,7 +13,6 @@ import com.julio.gameplus2.listeners.OnItemClickListener;
 import com.julio.gameplus2.modelos.VideoJuego;
 
 import java.util.List;
-import java.util.zip.Inflater;
 
 public class MasEsperadosAdapter extends RecyclerView.Adapter<MasEsperadosAdapter.MasEsperadosHolder> {
     private final OnItemClickListener onItemClickListener;
