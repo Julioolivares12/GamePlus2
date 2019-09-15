@@ -9,19 +9,19 @@
             android:icon="@drawable/home"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_categoria"
             android:icon="@drawable/categorias"
             android:title="@string/categorias" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_videojuegos"
             android:icon="@drawable/game"
             android:title="@string/videojuegos" />
         <item
-            android:id="@+id/nav_tools"
+            android:id="@+id/nav_favoritos"
             android:icon="@drawable/start"
             android:title="@string/favoritos" />
         <item
-            android:id="@+id/nav_ventas"
+            android:id="@+id/nav_masEsperados"
             android:icon="@drawable/venta"
             android:title="@string/ventas" />
         <item
@@ -33,7 +33,7 @@
     <item android:title="Contactos">
         <menu>
             <item
-                android:id="@+id/nav_share"
+                android:id="@+id/nav_contacto"
                 android:icon="@drawable/phone"
                 android:title="@string/contacto" />
 

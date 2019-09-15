@@ -29,6 +29,12 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="alumnos_gh">Alumnos:</string>
+    <string name="tecnicas_de_calidad_de_software">Tecnicas de calidad de software</string>
+    <string name="julio_roberto_olivares_perez_25_2088_2015">Julio Roberto Olivares Perez 25-2088-2015</string>
+    <string name="marvin_josue_cortez_rodas_25_2049_2015">Marvin Josue Cortez Rodas 25-2049-2015</string>
+    <string name="video_juegos">Video Juegos</string>
+    <string name="todo">TODO</string>
 
 
 </resources>
