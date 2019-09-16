@@ -21,6 +21,7 @@ import com.julio.gameplus2.ui.Adaptadores.AdapterTelefonos;
 public class PeoresFragment extends Fragment {
     GridView item;
     String []titulo;
+    String []comentario;
     int[]imagen = {R.drawable.peor1,
             R.drawable.peor2,
             R.drawable.peor3,
@@ -43,6 +44,7 @@ public class PeoresFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_peores, container, false);;
         titulo = getResources().getStringArray(R.array.titulos);
+        comentario = getResources().getStringArray(R.array.comentarios);
         AdapterPeores adapte = new AdapterPeores(getContext(), titulo, imagen);
         item = (GridView) view.findViewById(R.id.grid_peores);
         item.setAdapter(adapte);
@@ -54,7 +56,9 @@ public class PeoresFragment extends Fragment {
                 //asi se hace ahi con tu logica para que le mostres los datos en el otro
                 //Gracias
                 Bundle datots = new Bundle();
-                datots.putString("algo","algo");
+                datots.putString("titulo",titulo[position]);
+                datots.putString("comentario",comentario[position]);
+                datots.putInt("imagen",imagen[position]);
                 Navigation.findNavController(view).navigate(R.id.action_nav_peores_to_detallePeoresFragment,datots);
             }
         });

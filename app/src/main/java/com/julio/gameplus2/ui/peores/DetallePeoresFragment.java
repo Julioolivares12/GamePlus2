@@ -9,14 +9,11 @@ import android.view.ViewGroup;
 
 import com.julio.gameplus2.R;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class DetallePeoresFragment extends Fragment {
 
 
     public DetallePeoresFragment() {
-        // Required empty public constructor
+
     }
 
 
