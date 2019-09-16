@@ -2,6 +2,7 @@ package com.julio.gameplus2.adapters;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,11 +15,12 @@ import com.julio.gameplus2.listeners.OnItemCategoriaLIstener;
 import com.julio.gameplus2.modelos.Categoria;
 
 import java.util.List;
+import java.util.Random;
 
 public class CategoriaAdapter extends RecyclerView.Adapter<CategoriaAdapter.CategoriaHolder> {
     List<Categoria> categorias;
     private final OnItemCategoriaLIstener onItemCategoriaLIstener;
-    CategoriaAdapter(List<Categoria>categorias,OnItemCategoriaLIstener onItemCategoriaLIstener){
+   public CategoriaAdapter(List<Categoria>categorias,OnItemCategoriaLIstener onItemCategoriaLIstener){
         this.categorias = categorias;
         this.onItemCategoriaLIstener = onItemCategoriaLIstener;
     }
@@ -49,10 +51,14 @@ public class CategoriaAdapter extends RecyclerView.Adapter<CategoriaAdapter.Cate
             title = itemView.findViewById(R.id.tv_categoria);
             iv_categoria = itemView.findViewById(R.id.iv_categoria);
         }
-
+        protected int getRandomIntRange(int max,int min){
+            Random random = new Random();
+            return random.nextInt((max-min)+min)+min;
+        }
         void bind(final Categoria categoria, final OnItemCategoriaLIstener onItemCategoriaLIstener){
             title.setText(categoria.getNombre());
             Glide.with(itemView).load(categoria.getImagen()).centerCrop().into(iv_categoria);
+            //iv_categoria.getLayoutParams().height = getRandomIntRange(250,75);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

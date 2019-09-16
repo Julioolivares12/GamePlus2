@@ -14,7 +14,15 @@
         android:id="@+id/nav_categoria"
         android:name="com.julio.gameplus2.ui.categoria.CategoriaFragment"
         android:label="categoria"
-        tools:layout="@layout/fragment_categoria" />
+        tools:layout="@layout/fragment_categoria" >
+        <action
+            android:id="@+id/action_nav_categoria_to_detalleCategoriaFragment"
+            app:destination="@id/detalleCategoriaFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
     <fragment
         android:id="@+id/nav_favoritos"
         android:name="com.julio.gameplus2.ui.favoritos.FavoritosFragment"
@@ -48,7 +56,11 @@
         android:id="@+id/nav_videojuegos"
         android:name="com.julio.gameplus2.ui.videojuegos.VideojuegosFragment"
         android:label="videojuegos"
-        tools:layout="@layout/fragment_videojuegos" />
+        tools:layout="@layout/fragment_videojuegos" >
+        <action
+            android:id="@+id/action_nav_videojuegos_to_detalleGameFragment"
+            app:destination="@id/detalleGameFragment" />
+    </fragment>
     <fragment
         android:id="@+id/nav_contacto"
         android:name="com.julio.gameplus2.ui.contacto.ContactoFragment"
@@ -64,6 +76,25 @@
         android:name="com.julio.gameplus2.ui.masEsperados.DetalleMasEsperadosFragment"
         android:label="fragment_detalle_mas_esperados"
         tools:layout="@layout/fragment_detalle_mas_esperados" />
+    <fragment
+        android:id="@+id/detalleCategoriaFragment"
+        android:name="com.julio.gameplus2.ui.categoria.DetalleCategoriaFragment"
+        android:label="fragment_detalle_categoria"
+        tools:layout="@layout/fragment_detalle_categoria" >
+        <action
+            android:id="@+id/action_detalleCategoriaFragment_to_detalleVideojuegoFragment"
+            app:destination="@id/detalleVideojuegoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalleVideojuegoFragment"
+        android:name="com.julio.gameplus2.ui.categoria.DetalleVideojuegoFragment"
+        android:label="fragment_detalle_videojuego"
+        tools:layout="@layout/fragment_detalle_videojuego" />
+    <fragment
+        android:id="@+id/detalleGameFragment"
+        android:name="com.julio.gameplus2.ui.videojuegos.DetalleGameFragment"
+        android:label="fragment_detalle_game"
+        tools:layout="@layout/fragment_detalle_game" />
 
 
 </navigation>
