@@ -21,10 +21,10 @@
             android:id="@+id/tvPeor"
             android:layout_width="208dp"
             android:layout_height="32dp"
-            android:text="TextView"
             android:layout_centerHorizontal="true"
             android:gravity="center"
-            />
+            android:text="TextView"
+            android:textColor="#FF5722" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
