@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.julio.gameplus2.R;
 import com.julio.gameplus2.listeners.OnItemClickListener;
 import com.julio.gameplus2.modelos.VideoJuego;
@@ -51,7 +52,10 @@ public class MasEsperadosAdapter extends RecyclerView.Adapter<MasEsperadosAdapte
         }
 
         public void bind(final VideoJuego videoJuego, final OnItemClickListener onItemClickListener){
-            iv_masEsperado.setImageResource(videoJuego.getImagen());
+            Glide.with(itemView.getContext())
+                    .load(videoJuego.getImagen())
+                    .centerCrop().into(iv_masEsperado);
+            //iv_masEsperado.setImageResource(videoJuego.getImagen());
             tv_title_masEsperado.setText(videoJuego.getNombre());
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

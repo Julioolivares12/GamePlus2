@@ -24,7 +24,15 @@
         android:id="@+id/nav_masEsperados"
         android:name="com.julio.gameplus2.ui.masEsperados.MasEsperadosFragment"
         android:label="mas esperados"
-        tools:layout="@layout/fragment_mas_esperados" />
+        tools:layout="@layout/fragment_mas_esperados" >
+        <action
+            android:id="@+id/action_nav_masEsperados_to_detalleMasEsperadosFragment2"
+            app:destination="@id/detalleMasEsperadosFragment2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
     <fragment
         android:id="@+id/nav_peores"
         android:name="com.julio.gameplus2.ui.peores.PeoresFragment"
@@ -51,6 +59,11 @@
         android:name="com.julio.gameplus2.ui.peores.DetallePeoresFragment"
         android:label="fragment_detalle_peores"
         tools:layout="@layout/fragment_detalle_peores" />
+    <fragment
+        android:id="@+id/detalleMasEsperadosFragment2"
+        android:name="com.julio.gameplus2.ui.masEsperados.DetalleMasEsperadosFragment"
+        android:label="fragment_detalle_mas_esperados"
+        tools:layout="@layout/fragment_detalle_mas_esperados" />
 
 
 </navigation>

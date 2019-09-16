@@ -3,97 +3,93 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
 
     <TextView
         android:id="@+id/tvUniversidad"
         android:layout_width="328dp"
         android:layout_height="26dp"
+        android:layout_marginTop="16dp"
         android:text="@string/universidad_tecnologica_de_el_salvador"
         android:textColor="#C5003A"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.638"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.103" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvPalumnos"
         android:layout_width="88dp"
         android:layout_height="21dp"
+        android:layout_marginTop="16dp"
         android:text="@string/alumnos_gh"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.142"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.294" />
+        app:layout_constraintEnd_toEndOf="@+id/tvPalumnos2"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="@+id/tvPalumnos2"
+        app:layout_constraintTop_toBottomOf="@+id/tvPalumnos2" />
 
     <TextView
         android:id="@+id/tvJulio"
         android:layout_width="275dp"
         android:layout_height="17dp"
+        android:layout_marginTop="16dp"
         android:text="@string/julio_roberto_olivares_perez_25_2088_2015"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.338"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.375" />
+        app:layout_constraintEnd_toEndOf="@+id/tvMarvin"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvMarvin"
+        app:layout_constraintTop_toBottomOf="@+id/tvMarvin" />
 
     <TextView
         android:id="@+id/tvMarvin"
         android:layout_width="270dp"
         android:layout_height="20dp"
+        android:layout_marginTop="16dp"
         android:text="@string/marvin_josue_cortez_rodas_25_2049_2015"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.326"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.338" />
+        app:layout_constraintEnd_toEndOf="@+id/tvPalumnos"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="@+id/tvPalumnos"
+        app:layout_constraintTop_toBottomOf="@+id/tvPalumnos" />
 
     <TextView
         android:id="@+id/tvPalumnos2"
         android:layout_width="262dp"
         android:layout_height="19dp"
+        android:layout_marginTop="16dp"
         android:text="@string/tecnicas_de_calidad_de_software"
         android:textColor="#03A9F4"
         android:textSize="17sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.577"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.174" />
+        app:layout_constraintEnd_toEndOf="@+id/tvUniversidad"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toStartOf="@+id/tvUniversidad"
+        app:layout_constraintTop_toBottomOf="@+id/tvUniversidad" />
 
     <TextView
         android:id="@+id/tvTexto100"
         android:layout_width="262dp"
         android:layout_height="19dp"
+        android:layout_marginTop="16dp"
         android:text="@string/video_juegos"
         android:textColor="@color/design_default_color_primary_dark"
         android:textSize="17sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.436" />
+        app:layout_constraintEnd_toEndOf="@+id/tvJulio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvJulio"
+        app:layout_constraintTop_toBottomOf="@+id/tvJulio" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="187dp"
         android:layout_height="165dp"
-        android:layout_marginTop="284dp"
+        android:layout_marginTop="32dp"
         android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.255"
+        app:layout_constraintEnd_toEndOf="@+id/tvTexto100"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="@+id/tvTexto100"
+        app:layout_constraintTop_toBottomOf="@+id/tvTexto100"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/games3" />
 
 </android.support.constraint.ConstraintLayout>
