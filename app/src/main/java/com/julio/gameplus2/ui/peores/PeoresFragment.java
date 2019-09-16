@@ -20,7 +20,13 @@ public class PeoresFragment extends Fragment {
     String []titulo;
     int[]imagen = {R.drawable.peor1,
             R.drawable.peor2,
-            R.drawable.peor3
+            R.drawable.peor3,
+            R.drawable.peor4,
+            R.drawable.peor5,
+            R.drawable.peor6,
+            R.drawable.peor7,
+            R.drawable.peor8,
+            R.drawable.peor9
 
     };
 
