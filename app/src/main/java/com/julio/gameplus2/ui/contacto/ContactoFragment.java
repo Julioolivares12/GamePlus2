@@ -18,7 +18,7 @@ public class ContactoFragment extends Fragment {
     GridView item;
     String []sucursal;
     String []telefono;
-    int imagen1 = R.drawable.home;
+    int imagen1 = R.drawable.store;
 
     public ContactoFragment() {
         // Required empty public constructor
