@@ -32,7 +32,9 @@
         tools:layout="@layout/fragment_peores" >
         <action
             android:id="@+id/action_nav_peores_to_detallePeoresFragment"
-            app:destination="@id/detallePeoresFragment" />
+            android:label="Comentarios"
+            app:destination="@id/detallePeoresFragment"
+            />
     </fragment>
     <fragment
         android:id="@+id/nav_videojuegos"

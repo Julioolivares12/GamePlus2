@@ -24,8 +24,9 @@
 
         <TextView
             android:id="@+id/tvDetalleTitulo"
-            android:layout_width="128dp"
-            android:layout_height="24dp"
+            android:layout_width="229dp"
+            android:layout_height="63dp"
+            android:gravity="center"
             android:text="TextView"
             android:textColor="#FF5722"
             android:textSize="18sp"
