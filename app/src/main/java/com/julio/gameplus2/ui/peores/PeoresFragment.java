@@ -6,7 +6,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.GridView;
+
+import androidx.navigation.Navigation;
 
 import com.julio.gameplus2.R;
 import com.julio.gameplus2.ui.Adaptadores.AdapterPeores;
@@ -43,6 +46,18 @@ public class PeoresFragment extends Fragment {
         AdapterPeores adapte = new AdapterPeores(getContext(), titulo, imagen);
         item = (GridView) view.findViewById(R.id.grid_peores);
         item.setAdapter(adapte);
+        item.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                //codigo para cambiar al otro fragment dale q  valla a la otra vacia por el momento
+                //si queres enviar datos se hace asi
+                //asi se hace ahi con tu logica para que le mostres los datos en el otro
+                //Gracias
+                Bundle datots = new Bundle();
+                datots.putString("algo","algo");
+                Navigation.findNavController(view).navigate(R.id.action_nav_peores_to_detallePeoresFragment,datots);
+            }
+        });
 
         return view;
     }

@@ -29,7 +29,11 @@
         android:id="@+id/nav_peores"
         android:name="com.julio.gameplus2.ui.peores.PeoresFragment"
         android:label="peores videojuegos"
-        tools:layout="@layout/fragment_peores" />
+        tools:layout="@layout/fragment_peores" >
+        <action
+            android:id="@+id/action_nav_peores_to_detallePeoresFragment"
+            app:destination="@id/detallePeoresFragment" />
+    </fragment>
     <fragment
         android:id="@+id/nav_videojuegos"
         android:name="com.julio.gameplus2.ui.videojuegos.VideojuegosFragment"
@@ -40,6 +44,11 @@
         android:name="com.julio.gameplus2.ui.contacto.ContactoFragment"
         android:label="contacto"
         tools:layout="@layout/fragment_contacto" />
+    <fragment
+        android:id="@+id/detallePeoresFragment"
+        android:name="com.julio.gameplus2.ui.peores.DetallePeoresFragment"
+        android:label="fragment_detalle_peores"
+        tools:layout="@layout/fragment_detalle_peores" />
 
 
 </navigation>
