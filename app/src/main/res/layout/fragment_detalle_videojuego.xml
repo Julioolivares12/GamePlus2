@@ -51,6 +51,20 @@
                 app:layout_constraintEnd_toEndOf="@+id/iv_detalle_games"
                 app:layout_constraintStart_toStartOf="@+id/iv_detalle_games"
                 app:layout_constraintTop_toBottomOf="@+id/iv_detalle_games" />
+
+            <Button
+                android:id="@+id/btnFavorito2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@android:color/transparent"
+                android:drawableRight="@drawable/ic_grade_amarillo_24dp"
+                android:text="@string/favorito"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_detalle_games"
+                app:layout_constraintEnd_toEndOf="@+id/tv_detalle_descripcion_videojuego"
+                app:layout_constraintTop_toTopOf="@+id/iv_detalle_games"
+                app:layout_constraintVertical_bias="0.923" />
         </android.support.constraint.ConstraintLayout>
     </android.support.v4.widget.NestedScrollView>
 

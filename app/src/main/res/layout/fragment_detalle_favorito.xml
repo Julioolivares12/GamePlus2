@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.videojuegos.DetalleGameFragment"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    tools:context=".ui.favoritos.DetalleFavoritoFragment">
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
 
 
             <TextView
-                android:id="@+id/tv_title_detalle_games2"
+                android:id="@+id/tv_title_detalle_favorito"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="@android:color/background_dark"
@@ -30,41 +30,27 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/iv_detalle_game"
+                android:id="@+id/iv_detalle_favorito"
                 android:layout_width="0dp"
                 android:layout_height="400dp"
                 android:layout_marginTop="8dp"
                 android:contentDescription="descripcion"
-                app:layout_constraintEnd_toEndOf="@+id/tv_title_detalle_games2"
-                app:layout_constraintStart_toStartOf="@+id/tv_title_detalle_games2"
-                app:layout_constraintTop_toBottomOf="@+id/tv_title_detalle_games2"
+                app:layout_constraintEnd_toEndOf="@+id/tv_title_detalle_favorito"
+                app:layout_constraintStart_toStartOf="@+id/tv_title_detalle_favorito"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title_detalle_favorito"
                 tools:src="@tools:sample/avatars" />
 
             <TextView
-                android:id="@+id/tv_detalle_game_videojuego"
+                android:id="@+id/tv_detalle_descripcion_favorito"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:text="Descripcion"
                 android:textColor="@android:color/background_dark"
                 app:fontFamily="sans-serif-medium"
-                app:layout_constraintEnd_toEndOf="@+id/iv_detalle_game"
-                app:layout_constraintStart_toStartOf="@+id/iv_detalle_game"
-                app:layout_constraintTop_toBottomOf="@+id/iv_detalle_game" />
-
-            <Button
-                android:id="@+id/btnFav3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="32dp"
-                android:layout_marginRight="32dp"
-                android:background="@android:color/transparent"
-                android:drawableRight="@drawable/ic_grade_amarillo_24dp"
-                android:text="@string/favorito"
-                app:layout_constraintBottom_toBottomOf="@+id/iv_detalle_game"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/iv_detalle_game"
-                app:layout_constraintVertical_bias="0.974" />
+                app:layout_constraintEnd_toEndOf="@+id/iv_detalle_favorito"
+                app:layout_constraintStart_toStartOf="@+id/iv_detalle_favorito"
+                app:layout_constraintTop_toBottomOf="@+id/iv_detalle_favorito" />
         </android.support.constraint.ConstraintLayout>
     </android.support.v4.widget.NestedScrollView>
 

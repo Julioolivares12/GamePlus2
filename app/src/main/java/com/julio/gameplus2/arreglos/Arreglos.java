@@ -194,4 +194,5 @@ public class Arreglos {
     };
 
     public static List<VideoJuego> favoritos = new ArrayList<>();
+
 }

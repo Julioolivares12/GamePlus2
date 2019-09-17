@@ -27,7 +27,11 @@
         android:id="@+id/nav_favoritos"
         android:name="com.julio.gameplus2.ui.favoritos.FavoritosFragment"
         android:label="favoritos"
-        tools:layout="@layout/fragment_favoritos" />
+        tools:layout="@layout/fragment_favoritos" >
+        <action
+            android:id="@+id/action_nav_favoritos_to_detalleFavoritoFragment"
+            app:destination="@id/detalleFavoritoFragment" />
+    </fragment>
     <fragment
         android:id="@+id/nav_masEsperados"
         android:name="com.julio.gameplus2.ui.masEsperados.MasEsperadosFragment"
@@ -69,7 +73,7 @@
     <fragment
         android:id="@+id/detallePeoresFragment"
         android:name="com.julio.gameplus2.ui.peores.DetallePeoresFragment"
-        android:label="fragment_detalle_peores"
+        android:label="detalle peores"
         tools:layout="@layout/fragment_detalle_peores" />
     <fragment
         android:id="@+id/detalleMasEsperadosFragment2"
@@ -79,7 +83,7 @@
     <fragment
         android:id="@+id/detalleCategoriaFragment"
         android:name="com.julio.gameplus2.ui.categoria.DetalleCategoriaFragment"
-        android:label="fragment_detalle_categoria"
+        android:label="detalle categoria"
         tools:layout="@layout/fragment_detalle_categoria" >
         <action
             android:id="@+id/action_detalleCategoriaFragment_to_detalleVideojuegoFragment"
@@ -88,13 +92,18 @@
     <fragment
         android:id="@+id/detalleVideojuegoFragment"
         android:name="com.julio.gameplus2.ui.categoria.DetalleVideojuegoFragment"
-        android:label="fragment_detalle_videojuego"
+        android:label="detalle"
         tools:layout="@layout/fragment_detalle_videojuego" />
     <fragment
         android:id="@+id/detalleGameFragment"
         android:name="com.julio.gameplus2.ui.videojuegos.DetalleGameFragment"
-        android:label="fragment_detalle_game"
+        android:label="detalle"
         tools:layout="@layout/fragment_detalle_game" />
+    <fragment
+        android:id="@+id/detalleFavoritoFragment"
+        android:name="com.julio.gameplus2.ui.favoritos.DetalleFavoritoFragment"
+        android:label="fragment_detalle_favorito"
+        tools:layout="@layout/fragment_detalle_favorito" />
 
 
 </navigation>
