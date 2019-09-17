@@ -78,7 +78,7 @@
     <fragment
         android:id="@+id/detalleMasEsperadosFragment2"
         android:name="com.julio.gameplus2.ui.masEsperados.DetalleMasEsperadosFragment"
-        android:label="fragment_detalle_mas_esperados"
+        android:label="detalle mas esperados"
         tools:layout="@layout/fragment_detalle_mas_esperados" />
     <fragment
         android:id="@+id/detalleCategoriaFragment"

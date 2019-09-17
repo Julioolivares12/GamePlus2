@@ -61,6 +61,7 @@
                 android:background="@android:color/transparent"
                 android:drawableRight="@drawable/ic_grade_amarillo_24dp"
                 android:text="@string/favorito"
+                android:textColor="@android:color/white"
                 app:layout_constraintBottom_toBottomOf="@+id/iv_detalle_games"
                 app:layout_constraintEnd_toEndOf="@+id/tv_detalle_descripcion_videojuego"
                 app:layout_constraintTop_toTopOf="@+id/iv_detalle_games"

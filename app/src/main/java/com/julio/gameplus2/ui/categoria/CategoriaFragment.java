@@ -42,7 +42,7 @@ public class CategoriaFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_categoria, container, false);
         RecyclerView recyclerView = view.findViewById(R.id.rv_categorias);
         categorias= Arreglos.categorias;
-        
+
         initRecycler(recyclerView,view);
         return view;
     }
