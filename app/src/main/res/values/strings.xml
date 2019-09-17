@@ -37,6 +37,7 @@
     <string name="video_juegos">Video Juegos</string>
     <string name="todo">TODO</string>
     <string name="universidad_tecnologica_de_el_salvador">Universidad Tecnologica de El Salvador</string>
+    <string name="favorito">favorito</string>
 
     <string-array name="telefonos">
         <item>+503 2225-6934</item>

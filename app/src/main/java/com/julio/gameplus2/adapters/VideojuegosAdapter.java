@@ -5,8 +5,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.julio.gameplus2.R;
@@ -44,10 +46,20 @@ public class VideojuegosAdapter extends RecyclerView.Adapter<VideojuegosAdapter.
 
        TextView textView ;
        ImageView imageView;
+       Button btnFavorito;
         public VideoJuegosHolder(@NonNull View itemView) {
             super(itemView);
             textView = itemView.findViewById(R.id.tv_title_videojuegoCategoria);
             imageView = itemView.findViewById(R.id.iv_videojuegosCategoria);
+            if (itemView.findViewById(R.id.btnFav) != null){
+                btnFavorito = itemView.findViewById(R.id.btnFav);
+                btnFavorito.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(v.getContext(), "priono ", Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
         }
 
         void bind(final Games game, final OnVideojuegosItemClickListener onVideojuegosItemClickListener){
